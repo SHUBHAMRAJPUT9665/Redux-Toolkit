@@ -15,7 +15,7 @@ function Todos() {
             className="mt-1 m-20 flex justify-between items-center bg-blue-500 px-4 py-2 rounded"
             key={todo.id}
           >
-            <div className="text-white">{todo.text}</div>
+            <div className="text-white font-semibold	">{todo.text}</div>
             <button
               onClick={() => dispatch(removeTodo(todo.id))}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
