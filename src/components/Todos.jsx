@@ -3,16 +3,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeTodo } from "../features/todo/todoSlice";
 
 function Todos() {
-  const todos = useSelector((state) => state.todos);
+  const todos = useSelector(state => state.todos);
   const dispatch = useDispatch();
 
   return (
     <>
-      <h1>Todos</h1>
+      <h1 className="font-bold">Todos</h1>
       <ul className="list-none">
         {todos.map((todo) => (
           <li
-            className="mt-1 m-20 flex justify-between items-center bg-blue-500 px-4 py-2 rounded"
+            className="mt-1 m-4 flex justify-between items-center bg-blue-500 px-4 py-2 rounded"
             key={todo.id}
           >
             <div className="text-white font-semibold	">{todo.text}</div>

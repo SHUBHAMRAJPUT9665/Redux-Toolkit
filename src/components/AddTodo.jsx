@@ -7,7 +7,6 @@ function AddTodo() {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
 
-  const notify = () => toast("Wow so easy!");
 
   const addTodoHandler = (e) => {
     e.preventDefault();
